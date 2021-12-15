@@ -1,0 +1,145 @@
+body {
+    font-family: sans-serif;
+}
+
+hr {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li {
+    list-style-position:inside;
+}
+
+.paragraf {
+    font-size: 16px; 
+    line-height: 26px;
+    color: #1F3F68
+}
+
+.header1 {
+    font-size: 64px; 
+    color: #1F3F68;
+}
+
+.header2 {
+    font-weight: 500; 
+    font-size: 44px;
+    text-align: center;
+}
+
+.header3 {
+    font-size: 36px; 
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.inputtext {
+    border: 1px solid #356EAD; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    opacity: 0.4;  
+}
+
+.buttons {
+    background: #5A98D0; 
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2); 
+    border-radius: 10px; 
+    font-weight: 500; 
+    font-size: 16px;
+    line-height: 26px; 
+    text-align: center; 
+    color: #FFFFFF; 
+    text-transform: uppercase;      
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100%;
+}
+
+div {
+    border: 1px solid #000;
+}
+
+.site_header {
+    height: fit-content;
+    border: 2px solid rgb(235, 9, 9);
+    margin-bottom: 30px;
+}
+
+.menu{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.context_block {
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #356EAD;
+    text-align: left;
+}
+
+.inner_context {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 0;
+    border-width: 100%;
+}
+
+.blocks_of_data{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 2px solid #4d8505;
+    display: inline-flex;
+    justify-content: space-between;    
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.block_of_data{
+    padding:10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    vertical-align:top;
+    /* margin-right: 10px; */
+    text-align: left;
+}
+
+.site_footer {
+    height: fit-content;
+    border: 2px solid rgb(235, 9, 9);
+    margin-top: 30px
+}
+
+.rights {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.block2 {
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
