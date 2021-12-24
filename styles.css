@@ -282,6 +282,13 @@ body {
 li{
     list-style-position:inside;
     flex-grow: 1;
+    letter-spacing: 0.05em;
+    
+}
+
+.contacts__links{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .rights{
