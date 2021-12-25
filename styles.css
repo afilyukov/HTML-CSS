@@ -85,6 +85,8 @@ body {
     line-height: 46px;
     letter-spacing: 0.05em;
     color: #000000;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .what-we-do{
@@ -94,6 +96,8 @@ body {
 .heading-mini {
     font-size: 20px;
     line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
     color: #1F3F68;
     letter-spacing: 0.05em;
     margin-bottom: 14px;
