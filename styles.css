@@ -14,7 +14,7 @@ body {
 }
 
 .container { 
-    width: 1140px; 
+    max-width: 1140px; 
     margin: 0 auto; 
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .top{
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -42,6 +42,7 @@ body {
     background-image: url(images/top__back.svg);
     background-repeat: no-repeat;
     background-position: right center ;
+    background-size: 44%;
 }
 
 .top__heading {
@@ -150,10 +151,6 @@ body {
     text-decoration: none;
 }
 
-.project {
-
-}
-
 .project__item {
     position: relative;
     flex-grow: 1;
@@ -179,11 +176,14 @@ body {
     position: absolute;
     top: 64px;
     right: 64px;
+    font-weight: 300;
 }
 
-.project__parent > .project__item > .project__text {
-    left: 64px;
+.project__text_mini {
     right: auto;
+    left: 32px;
+    top: 32px;
+    text-align: left;
 }
 
 .project__parent > .project__item:first-of-type {
@@ -212,15 +212,7 @@ body {
     justify-content: space-between;
 }
 
-.footer__box{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-
 .footer__info__box{
-    display: flex;
-    flex-direction: column;
     height: 100%;
 }
 
@@ -287,7 +279,6 @@ li{
     list-style-position:inside;
     flex-grow: 1;
     letter-spacing: 0.05em;
-    
 }
 
 .contacts__links{
@@ -312,4 +303,161 @@ li{
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+@media(max-width: 1024px){
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top__info {
+        background-position: right 280px;
+    }
+
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+         margin-bottom: 32px;
+    }
+
+    .footer__info{
+        padding-top: 47px;
+        padding-bottom: 44px;
+        padding-left: 92px;
+    }
+
+    .footer__text {
+        width: 336px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .footer__button {
+        padding: 5px 25px;
+        font-size: 16px;
+        margin-right: 92px;
+    }
+
+    .footer__contacts{
+        padding-left: 92px;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 667px){
+    .header{
+        padding-top: 24px;
+    }
+
+    .top{
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+ 
+    .top__heading {
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    
+    .top__text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .top__info {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-image: none;
+    }
+
+    .top__button {
+        font-size:12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .card-box{
+        padding-top: 32px;
+    }
+ 
+    .card{
+        width: 100%;
+    }
+
+    .text_project{
+        width: 100%;
+    }
+
+    .project__text{
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__text_mini {
+        left: 16px;
+    }
+
+    .project__parent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project__parent > .project__item:first-of-type {
+        margin-right: 0;
+        margin-bottom: 16px;
+    } 
+
+    .footer__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        padding-left: 16px;
+        justify-content:space-between;
+    }
+
+    .footer__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__heading{
+        width: 100%;
+    }
+
+    .footer__button {
+        padding: 5px 25px;
+        justify-content: center;
+    }
+
+    .footer__contacts{
+        padding-left: 16px;
+    }
+
+
 }
